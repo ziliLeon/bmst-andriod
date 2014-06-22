@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="info_share">Share</string>
     <string name="info_like">Like</string>
+    <string name="info_name">Name:</string>
 
 
 </resources>
