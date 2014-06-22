@@ -16,25 +16,89 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
 
-        <ImageView
+        <!-- Head image -->
+        <RelativeLayout
             android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView"
+                android:src="@drawable/ic_lake"
+                android:scaleType = "centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <!-- miles -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="@string/hello_world"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                >
+
+                    <TextView
+                        android:text="@string/hello_world"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        />
+
+                    <Button
+                        android:id="@+id/resinfo_share_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_share"
+                        />
+
+                    <Button
+                        android:id="@+id/resinfo_like_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_like"
+                        android:layout_gravity="right"
+                        />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!-- Base information -->
+        <TextView
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_gravity="center_horizontal" />
+            />
 
         <TextView
             android:text="@string/hello_world"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="29dp"
-            android:layout_marginBottom="185dp" />
-
-
-
-
+            />
+        <TextView
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
 
     </LinearLayout>
 
