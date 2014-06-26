@@ -32,35 +32,52 @@
             <!-- miles -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_margin="10px"
+                >
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/res_distance"
+                    android:layout_marginRight="10px"
+                />
+
+                <TextView
+                    android:id="@+id/res_distance"
                     android:text="@string/hello_world"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     />
+
+
+
+
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:layout_alignParentBottom="true"
                 android:gravity="bottom"
+
                 >
 
-                    <TextView
-                        android:text="@string/hello_world"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        />
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:stepSize="0.5"
+                        style="?android:attr/ratingBarStyleSmall"
 
-                    <Button
-                        android:id="@+id/resinfo_share_button"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="30px"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/info_share"
-                        />
+                        android:layout_height="wrap_content">
+
+                    </RatingBar>
 
                     <Button
                         android:id="@+id/resinfo_like_button"
@@ -68,69 +85,72 @@
                         android:layout_height="wrap_content"
                         android:text="@string/info_like"
                         android:layout_gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
                         />
 
-            </LinearLayout>
+                    <Button
+                        android:id="@+id/resinfo_share_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_share"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/resinfo_like_button"
+                        />
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
 
         <!-- Base information -->
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
         >
-        <TextView
+
+        <TableRow>
+            <TextView
             android:text="@string/info_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
             />
-
-        <TextView
-            android:text="@string/hello_world"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            <TextView
+            android:text="@string/info_name_content"
             />
-    </LinearLayout>
+        </TableRow>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:text="@string/hello_world"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+        <TableRow>
+            <TextView
+                android:text="@string/info_location"
+                />
+            <TextView
+                android:text="@string/info_location_content"
+                />
+        </TableRow>
 
-        <TextView
-            android:text="@string/hello_world"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-    </LinearLayout>
+        <TableRow>
+            <TextView
+                android:text="@string/info_phone"
+                />
+            <TextView
+                android:text="@string/info_phone_content"
+                />
+        </TableRow>
 
+        <TableRow>
+            <TextView
+                android:text="@string/info_hours"
+                />
+            <TextView
+                android:text="@string/info_hours_content"
+                />
+        </TableRow>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:text="@string/hello_world"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-        <TextView
-            android:text="@string/hello_world"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-    </LinearLayout>
+    </TableLayout>
 
     </LinearLayout>
 
