@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Base Information container -->
+    <RelativeLayout
+        android:id="@+id/res_base_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <!-- Dish Information container -->
+    <!-- TODO set list view height dynamically -->
+    <RelativeLayout
+        android:id="@+id/res_dish_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </RelativeLayout>
+
+
+    <!-- Review container -->
+    <!-- TODO set list view height dynamically -->
+    <RelativeLayout
+        android:id="@+id/res_review_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
